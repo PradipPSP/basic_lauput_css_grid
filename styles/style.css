@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 60px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+nav > a:hover{
+    background-color: rgb(137, 140, 143);
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: overline;
+    color: #000;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 100%;
+    height: 90vh;
+}
+
+.sidebar{
+    background-color: rgb(85, 150, 175);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.sidebar > ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar > ul > li{
+    
+}
+
+.sidebar > ul > li >a{
+    text-decoration: none;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: block;
+    border-bottom: 1px solid;
+    padding: 10px; 
+}
+
+.sidebar > ul > li:last-child >a{
+    border-bottom: none;
+}
+
+.sidebar > ul > li >a:hover{
+    background-color: rgb(142, 145, 137);
+    color: #000;
+}
+.contents{
+    background-color: skyblue;
+    padding:20px;
+}
+
+.contents >h1{
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contents>p{
+    text-align: justify;
+}
+
+.ads{
+    background-color: rgb(85, 150, 175);
+    padding: 20px;
+}
+
+.ads>h1{
+    margin-bottom: 10px;
+}
+
+.ads>p{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+}
